@@ -3,10 +3,18 @@ import Footer from "../components/Footer"
 import Nav from "../components/Nav";
 import NavUP from "../components/NavUp";
 import PageNav from "../components/PageNav";
-import Nice from "../components/ContactEmail"
+import ContactEmail from "../components/ContactEmail"
+import CarouselV1 from "../components/Carousel-Impl"
 import SideBar from "../components/SideBar";
 
 function home(){
+    const techstack = ["Java","C++","C","Oracle SQL","MySQL","CSS","CSS3","HTML","Perl","PHP",
+    "JavaScript","Bash","Git","Flask","ReactJS","Node.js","Google Test", "Codecov", "Travis Ci","OpenGL","Github","Nginx","SSH", "SSL"]
+    const osstack = ["Windows", "Mac OS", "Linux/Unix"]
+    const list_os_show = osstack.map(osstack_tech =>  <li className="list-techno-inner"> {osstack_tech}</li>)
+    const list_tech_show = techstack.map(tech => <li className="list-techno-inner"> {tech}</li>)
+
+
 return (
     <div className="Main">
     <Nav/>
@@ -16,16 +24,17 @@ return (
     <main>
         <section id="About-Container">
         <div className="Download-CV">
-            <div className="first-column">
-                <figure className="profile-img">
-                <img src="images/ivan.jpg"
-                    alt="Profile Ivan"/>
-                </figure>        
+                <div className="first-column">
+                    <figure className="profile-img">
+                    <img src="images/ivan.jpg" alt="Profile Ivan"/>
+                    </figure>
+                    <ul className="profile-links">
+                        <a href="https://github.com/ivangolovine" target="_blank"><img id = "gitImg" src="images/githubimage.png"/></a>
+                        <a href="https://www.linkedin.com/in/ivan-golovine-76215a9b/" target="_blank"><img id = "linkImg"  src="images/linkedIn.png"/></a>        
+                    </ul>
                 <div>
-
-            </div>
-        </div> 
-
+                </div>
+                 </div> 
             <div className="second-column">
                 <h1> About Me </h1>
                 <h2> Ivan Golovine </h2>
@@ -37,8 +46,34 @@ I'm most familiar with Java, C++, Python, and C, however, I'm prepared to learn 
             </div>
         </div>
         </section> 
+        <div className="color-back-tech">
+            <section>
+                <div className="my-technologies-container">
+                    <h2 className="experience-title">Experience</h2>
+                    <CarouselV1 />
+
+
+                    
+                </div>
+                <div className="my-technologies-container">
+                    <h2>My Stack</h2>
+                        <p>General Overview</p>
+                        <h1>Languages/Libraries/Frameworks</h1>
+                            <ul className="my-technologies-outer">
+                            {list_tech_show}
+                            </ul>
+                        <h1>OS</h1>
+                        <ul className="my-technologies-outer">
+                            {list_os_show}
+                        </ul>
+
+
+
+                    </div>
+            </section>
+        </div>
     </main>
-    <Nice/>
+    <ContactEmail/>
     <Footer />
     </div>
 );

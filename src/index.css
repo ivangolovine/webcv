@@ -51,14 +51,16 @@
 
 header{
     text-align: center;
-    line-height: 100px;
-    height: 100px;
-    font-size: 50px;
+    line-height: 200px;
+    height: 200px;
+    font-size: 72px;
     font-weight: 700;
     color: var(--color-white-light);
     text-shadow: 0 0 10px var(--color-black-light);
     background: var(--color-black-light);
-    /*margin: 75px 0 0 0;*/
+    /* linear-gradient(135deg, var(--color-turquoise-light) 0%,
+var(--color-blue-dark) 100%); */
+    margin: 75px 0 0 0;
 }
 
 .cont-col {
@@ -80,21 +82,6 @@ header{
 
 
 
-#download-b {
-    border: none;
-    color: rgb(231, 123, 52);
-    text-align: center;
-    padding: 2px 2px;
-    margin: 2px 2px;
-    font-size: 10px;
-    transition-duration: 0.5ms;
-}
-
-#download-b:hover {
-    background-color: aqua;
-    color: wheat;
-}
-
 #home-p-down {
     text-align: center;
     color: rgb(127, 140, 141);
@@ -108,17 +95,17 @@ header{
   .dropmenu {
     font-size: 12px;
     cursor: pointer;
-    position: absolute;
-	width:60px;
-	height:60px;
-	top:30px;
-	left:90px;
+    position: fixed;
+	width:40px;
+	height:40px;
+	top:20px;
+	left:100px;
 	background-color:#0C9;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
-    z-index: 3;
+    z-index: 7;
   }
 
     /* Dropdown button on hover & focus */
@@ -128,25 +115,24 @@ header{
   /* Dropdown Content (Hidden by Default) */
   .drop-down-cont {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f1f1f1;
-    min-width: 160px;
-    top: 100px;
-    left: 70px;
+    min-width: 90px;
+    left: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 3;
+    z-index: 8;
   }
   
   /* Links inside the dropdown */
-  .drop-down-cont ul {
+  .drop-down-cont li {
     color: black;
-    padding: 2px 2px;
+    padding: 10px 10px;
     text-decoration: none;
     display: block;
   }
   
   /* Change color of dropdown links on hover */
-  .drop-down-cont ul:hover {background-color: #ddd}
+  .drop-down-cont ul:hover {background-color: rgb(158, 34, 34)}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
@@ -210,10 +196,12 @@ footer .col:first-child li:hover{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: rgb(120, 228, 223); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
   }
@@ -258,50 +246,6 @@ footer .col:first-child li:hover{
 }
 
 
-.TopRighNav{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 75px;
-    padding: 0 15px;
-    /*box-shadow: 0 0 10px var(--color-black-light);*/
-}
-
-.TopRighNav img {
-    height: 50px;
-    width: 50px;
-    padding: 8px 0;
-}
-
-
-.TopRighNav>ul{
-    list-style-type: none;
-}
-
-.TopRighNav>ul li{
-    display: inline-block;
-    height: 75px;
-    width: 120px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 22px;
-    color: var(--color-white-light);
-}
-
-.TopRighNav>ul li:hover{
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.TopRighNav img:hover{
-    opacity: 0.5;
-    cursor: pointer;
-}
-
 .first-column {
     flex-grow: 1;
 }
@@ -332,17 +276,50 @@ footer .col:first-child li:hover{
     margin: 20px;
 }
 
-form {
-    background-color: #55acf3;
-    padding: 1.5em;
-    border-radius: 1em;
-    margin: 20px;
+
+#email-back-col{
+    flex-direction: column;
+    display: flex;
+    background-color: var(--color-gray-light);
+    /*background-image: linear-gradient(0deg, rgba(52,73,94,1) 33%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 64%, rgba(52,73,94,1) 66%);*/
+    /*background-image: linear-gradient(0deg, #fff 44.44%, #d4e7fe 44.44%, #d4e7fe 0%, #fff 0%, #fff 94.44%, rgb(60, 83, 107) 94.44%, rgb(52, 73, 94) 100%);*/
+    /*background: rgba(52,73,94,1);
+    background-size: 10px 1220px;*/
 }
 
-.center {
+#Contact-mail-header {
+    padding-bottom: 10px;
+    font-size: 40px;
+
+}
+
+.email-container-box {
+    width: 60vw;
+    z-index: 2;
+    padding: 2em;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.email-container-send-box {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.email-container-send-box form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.email-group {
+    display: flex;
+    margin-bottom: 1em;
+    flex-direction: column;
 }
 
 .error-message {
@@ -350,25 +327,225 @@ form {
     color: red;
 }
 
-#email-back-col{
-    flex-direction: column;
+
+
+/*used when at the top*/
+.Main-nav-bar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    padding: 0 15px;
+    z-index: 5;
+    background-color: var(--color-black-light);
+    /*box-shadow: 0 0 10px var(--color-black-light);*/
+}
+/*used when scrolling down*/
+.Main-nav-bar2{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    padding: 0 15px;
+    z-index: 5;
+    background-color: var(--color-black-dark);
+    /*box-shadow: 0 0 10px var(--color-black-light);*/
+}
+
+.Main-nav-img img {
+    height: 40px;
+    width: 40px;
+    float: left;
+    padding: 8px 0;
+}
+
+.nav-test-bar {
+    position: relative;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.nav-test-bar>ul{
+    justify-content: flex-end;
     align-items: center;
-    background-color: rgba(52,73,94,1);
-    /*background-image: linear-gradient(0deg, rgba(52,73,94,1) 33%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 64%, rgba(52,73,94,1) 66%);*/
-    /*background-image: linear-gradient(0deg, #fff 44.44%, #d4e7fe 44.44%, #d4e7fe 0%, #fff 0%, #fff 94.44%, rgb(60, 83, 107) 94.44%, rgb(52, 73, 94) 100%);*/
-    /*background: rgba(52,73,94,1);
-    background-size: 10px 1220px;*/
+    list-style-type: none;
+    
 }
 
-.email-outer-inner {
-    width: 20px;
-    margin-top: 10px;
+/*.nav-test-bar>ul li{
+    display: inline-block;
+    height: 50px;
+    width: 110px;
     text-align: center;
+    vertical-align:middle;
+    line-height: 75px;
+    font-size: 22px;
+    border-radius: 15px;
+    color: var(--color-white-light);
+}*/
+.nav-test-bar>ul li{
+    text-align: center;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.nav-test-bar>ul li #ntb-bar-links {
+    text-transform: capitalize;
+                    text-decoration: none;
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #ffffff;
+                    padding: 14px;
+                    line-height: 50px;
+                    border-radius: 15px;
+                    transition: 0.3s;
+}
+
+.nav-test-bar>ul li:hover #ntb-bar-links{
+    opacity: 0.5;
+    background-color: rgb(83, 210, 238);
+    -webkit-box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16); 
+    box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.nav-test-bar .Main-nav-img img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#download-b {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background: transparent;
+    transition-duration: 0.5ms;
+}
+
+.profile-links {
+    text-align: center;
+    margin-top: 1em; 
+    max-height: 50px;
+    display: inline-block;
+}
+
+#gitImg {
+    object-fit: cover;
+    vertical-align:middle;
+    height: 50px;
+    width: 50px;
+}
+
+#linkImg {
+    vertical-align:middle;
+    object-fit: cover;
+    max-height: 40px;
+    width: 40px;
+}
+
+.color-sep{
+    background-color: var(--color-black-light);
+    height: 10px;
+    width: 100%;
+}
+
+.my-technologies-container{
+    background-color: rgba(26, 17, 17, 0.659);
+    border-radius: 15px;
+    box-shadow: 0 0 30px 0 rgba(112, 112, 112, 0.16);
+    flex-direction: column;
+    display: flex;
+    width: 85vw;
+    z-index: 2;
+    padding: 2em;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 
 
-/*#email-box-group {
+
+
+.my-technologies-outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    color: #f1f1f1;
+}
+
+
+.list-techno-inner {
+    padding: 2px 5px 2px 5px;
+    background-color: #414c73;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.color-back-tech{
+    background-color: rgba(52,73,94,1);
+    background-image:linear-gradient(0deg, rgba(255,255,255,1) 16%, rgba(162,222,186,1) 45%, rgba(52,73,94,1) 90%);
+}
+
+.color-back-tech>section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carousel-container {
+    flex-direction: column;
+    max-width: 1400px;
+    align-self: center;
+    width: 85vw;
+    color: #FFF;
+}
+
+.carousel-header {
+    flex-direction: column;
+    text-align: right;
+}
+
+.company-name {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.company-Desc{
+    margin-top: 1em;
+    line-height: 1.5em;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.experience-title {
+    font-size: 45px;
+    font-weight: 600;
+    flex-grow: 4;
+    color: #FFF;
+}
+
+
+
+/*
+
+
+
+
+#email-box-group {
     top: -4em;
     position: relative;
     justify-content: center;

@@ -1,6 +1,8 @@
 import Home from './pages/Home';
-import Credits from './pages/Credits'
-import Experience from './pages/Experience';
+import Examples from './pages/Examples';
+import HireUs from './pages/HireUs';
+import About from './pages/About'
+
 import {
   BrowserRouter,
   Routes,
@@ -13,8 +15,9 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Credits" element={<Credits />} />
-        <Route path="/Experience" element={<Experience/>}/>
+        <Route path="/Examples" element={<Examples/>} />
+        <Route path="/Hire" element={<HireUs />} />
+        <Route path="/About" element={<About />}/>
       </Routes>
     </div>
   );

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState,useEffect } from 'react';
 
 function myFunction() {
   document.getElementById("myDropmenu").classList.toggle("show");
@@ -19,19 +20,38 @@ window.onclick = function(event) {
 }
 
 function Nav() {
+  const [showSmallNav, setSmallNav] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll",() => {
+        if (window.scrollY > 100) {
+          setSmallNav(true)
+        }
+        else {
+          setSmallNav(false)
+        }
+    })
+},[])
+
+
   return(
+    <>
+    { showSmallNav && (
     <div>
-      <button onClick={myFunction} class = "dropmenu">Details</button>
-      <nav id="myDropmenu" class = "drop-down-cont">
-        <ul>
+      <button onClick={myFunction} className = "dropmenu">Menu</button>
+      <nav>
+        <ul id="myDropmenu" className = "drop-down-cont">
           <Link to="/"><li>Home</li></Link>
-          <Link to="/credits"><li>Credits</li></Link>
-          <a href="files-dwnl/CV_2022_vi.png" download="CV-test">
-                    <button id = "download-b" type="button">Download my CV</button>
-                    </a>
+          <Link to="/About"><li>About Us</li></Link>
+          <Link to="/Examples"><li>Examples</li></Link>
+          <Link to="/Hire"><li>Hire Us</li></Link>
+          <a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF">
+           <li><img id="download-b" src="images/Download-Resume.png"/></li></a>
         </ul>
       </nav>
     </div>
+    )
+    }
+    </>
   );
 }
 export default Nav;

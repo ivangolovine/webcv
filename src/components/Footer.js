@@ -6,9 +6,11 @@ function Footer(){
       <div className="col">
         <p>Explore</p>
         <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/Credits'>Credits</Link></li>
-        <li><Link to='/Experience'>Experience</Link></li>
+          <Link to="/"><li>Home</li></Link>
+          <Link to="/About"><li>About Us</li></Link>
+          <Link to="/Examples"><li>Examples</li></Link>
+          <Link to="/Hire"><li>Hire Us</li></Link>
+          <a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF"><img src="images/Download-Resume.png"/></a>
       </ul>
       </div>
       <div className="col">
