@@ -26,7 +26,7 @@ return (
         <div className="Download-CV">
                 <div className="first-column">
                     <figure className="profile-img">
-                    <img src="images/ivan.jpg" alt="Profile Ivan"/>
+                    <img src="images/ivan.png" alt="Profile Ivan"/>
                     </figure>
                     <ul className="profile-links">
                         <a href="https://github.com/ivangolovine" target="_blank"><img id = "gitImg" src="images/githubimage.png"/></a>
