@@ -7,7 +7,7 @@ function myFunction() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropmenu')) {
+  if (!event.target.matches('.dropmenu-button')) {
     var dropdowns = document.getElementsByClassName("drop-down-cont");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -19,6 +19,28 @@ window.onclick = function(event) {
   }
 }
 
+function Nav() {
+  return(
+    <>
+    <div className="dropmenu">
+      <button onClick={myFunction} className = "dropmenu-button">Menu</button>
+      <nav>
+        <ul id="myDropmenu" className = "drop-down-cont">
+          <Link to="/"><li>Home</li></Link>
+          <Link to="/About"><li>About Us</li></Link>
+          <Link to="/Examples"><li>Examples</li></Link>
+          <Link to="/Hire"><li>Hire Us</li></Link>
+          <a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF">
+           <li><img id="download-b" src="images/Download-Resume.png"/></li></a>
+        </ul>
+      </nav>
+    </div>
+    </>
+  );
+}
+export default Nav;
+
+/*
 function Nav() {
   const [showSmallNav, setSmallNav] = useState(false);
   useEffect(() => {
@@ -54,4 +76,6 @@ function Nav() {
     </>
   );
 }
-export default Nav;
+
+
+*/

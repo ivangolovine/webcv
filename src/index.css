@@ -80,8 +80,6 @@ var(--color-blue-dark) 100%); */
 
 }
 
-
-
 #home-p-down {
     text-align: center;
     color: rgb(127, 140, 141);
@@ -89,53 +87,6 @@ var(--color-blue-dark) 100%); */
     outline-color: black;
 }
 
-/*--------------------------*/
-/* Dropdown Button */
-  /* The container <div> - needed to position the dropdown content */
-  .dropmenu {
-    font-size: 12px;
-    cursor: pointer;
-    position: fixed;
-	width:40px;
-	height:40px;
-	top:20px;
-	left:100px;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-    z-index: 7;
-  }
-
-    /* Dropdown button on hover & focus */
-    .dropmenu:hover, .dropmenu:focus {
-        background-color: #2980B9;
-      }
-  /* Dropdown Content (Hidden by Default) */
-  .drop-down-cont {
-    display: none;
-    position: fixed;
-    background-color: #f1f1f1;
-    min-width: 90px;
-    left: 80px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 8;
-  }
-  
-  /* Links inside the dropdown */
-  .drop-down-cont li {
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .drop-down-cont ul:hover {background-color: rgb(158, 34, 34)}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
 
 /*--------------------------*/
 /*Footer*/
@@ -328,8 +279,6 @@ footer .col:first-child li:hover{
 }
 
 
-
-/*used when at the top*/
 .Main-nav-bar{
     position: fixed;
     display: flex;
@@ -341,9 +290,10 @@ footer .col:first-child li:hover{
     padding: 0 15px;
     z-index: 5;
     background-color: var(--color-black-light);
-    /*box-shadow: 0 0 10px var(--color-black-light);*/
+    box-shadow: 0 0 10px var(--color-black-light);
 }
 /*used when scrolling down*/
+
 .Main-nav-bar2{
     position: fixed;
     display: flex;
@@ -355,7 +305,7 @@ footer .col:first-child li:hover{
     padding: 0 15px;
     z-index: 5;
     background-color: var(--color-black-dark);
-    /*box-shadow: 0 0 10px var(--color-black-light);*/
+    box-shadow: 0 0 10px var(--color-black-light);
 }
 
 .Main-nav-img img {
@@ -454,6 +404,14 @@ footer .col:first-child li:hover{
     background-color: var(--color-black-light);
     height: 10px;
     width: 100%;
+}
+
+.dropmenu{
+    display: none;
+}
+
+.drop-down-cont {
+    display: none;
 }
 
 .my-technologies-container{

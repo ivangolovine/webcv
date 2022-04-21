@@ -1,3 +1,4 @@
+from crypt import methods
 from unicodedata import name
 from aiohttp import request
 from flask import Flask
@@ -40,6 +41,12 @@ def ContactFormValidator(a,b,c):
     if (len(c) > 2000):
         return "message is too long"
     return "correct input"
+
+@app.route('/api/time', methods=['GET'])
+def timeGET():
+    j = "nice"
+
+
 
 @app.route('/api/sendMail', methods=['POST'])
 def bobjk():
