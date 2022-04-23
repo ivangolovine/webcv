@@ -12,10 +12,12 @@ function About(){
         <Header text = "About"/>
         <PageNav />
         <NavUP />
-        <main>
-            <div>
-                <div>
-                    <h2>University Projects</h2>
+        <main id = "About-Container">
+            <div className="home-page-back">
+                <div className="inner-container-home">
+                    <h2>Hello I'm Ivan Golovine</h2>
+                    <p>I'm a software developer, web designer, and programmer</p>
+
 
                 </div>
                 <div>

@@ -165,8 +165,10 @@ footer .col:first-child li:hover{
 
 /*Controls main page background*/
 #About-Container{
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: rgba(52,73,94,1);
     background-image:linear-gradient(0deg, rgba(52,73,94,1) 10%, rgba(255,255,255,1) 11%, rgba(255,255,255,1) 95%, rgba(52,73,94,1) 96%);
     /*background-image: linear-gradient(0deg, #fff 44.44%, #d4e7fe 44.44%, #d4e7fe 0%, #fff 0%, #fff 94.44%, rgb(60, 83, 107) 94.44%, rgb(52, 73, 94) 100%);
@@ -182,23 +184,16 @@ footer .col:first-child li:hover{
     background-color: #fff;
     flex-direction: row;
     border-radius: 15px;
-    box-shadow: 0 0 30px 0 rgba(112, 112, 112, 0.16);
+    box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
     width: 85vw;
     z-index: 2;
     padding: 2em;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+   
 }
 
 .Download-CV .first-column {
     flex-grow: 2;
     text-align: center;
-}
-
-
-.first-column {
-    flex-grow: 1;
 }
 
 .first-column .profile-img{
@@ -222,6 +217,13 @@ footer .col:first-child li:hover{
     object-fit: cover;
     object-position: 50% 40%;
 }
+
+.profile-links {
+    margin-top: 1em; 
+    max-height: 50px;
+    display: inline-block;
+}
+
 
 .second-column {
     margin: 20px;
@@ -379,13 +381,6 @@ footer .col:first-child li:hover{
     transition-duration: 0.5ms;
 }
 
-.profile-links {
-    text-align: center;
-    margin-top: 1em; 
-    max-height: 50px;
-    display: inline-block;
-}
-
 #gitImg {
     object-fit: cover;
     vertical-align:middle;
@@ -429,10 +424,6 @@ footer .col:first-child li:hover{
     margin-top: 10px;
 }
 
-
-
-
-
 .my-technologies-outer {
     display: flex;
     flex-direction: row;
@@ -453,6 +444,9 @@ footer .col:first-child li:hover{
 }
 
 .color-back-tech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(52,73,94,1);
     background-image:linear-gradient(0deg, rgba(255,255,255,1) 16%, rgba(162,222,186,1) 45%, rgba(52,73,94,1) 90%);
 }
@@ -497,6 +491,14 @@ footer .col:first-child li:hover{
 }
 
 
+.home-page-back {
+    width: 100%;
+    background-color: #555;
+}
+
+.inner-container-home{
+    background-color: #889ab1;
+}
 
 /*
 

@@ -25,9 +25,11 @@ return (
         <section id="About-Container">
         <div className="Download-CV">
                 <div className="first-column">
-                    <figure className="profile-img">
-                    <img src="images/ivan.png" alt="Profile Ivan"/>
-                    </figure>
+                    <div className="profile-img-box">
+                        <figure className="profile-img">
+                            <img src="images/ivan.png" alt="Profile Ivan"/>
+                        </figure>
+                    </div>
                     <ul className="profile-links">
                         <a href="https://github.com/ivangolovine" target="_blank"><img id = "gitImg" src="images/githubimage.png"/></a>
                         <a href="https://www.linkedin.com/in/ivan-golovine-76215a9b/" target="_blank"><img id = "linkImg"  src="images/linkedIn.png"/></a>        
@@ -50,10 +52,7 @@ I'm most familiar with Java, C++, Python, and C, however, I'm prepared to learn 
             <section>
                 <div className="my-technologies-container">
                     <h2 className="experience-title">Experience</h2>
-                    <CarouselV1 />
-
-
-                    
+                    <CarouselV1 />    
                 </div>
                 <div className="my-technologies-container">
                     <h2>My Stack</h2>
@@ -66,9 +65,6 @@ I'm most familiar with Java, C++, Python, and C, however, I'm prepared to learn 
                         <ul className="my-technologies-outer">
                             {list_os_show}
                         </ul>
-
-
-
                     </div>
             </section>
         </div>
