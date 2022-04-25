@@ -4,7 +4,7 @@ function Contact(){
     const [sendName, setName] = useState('');
     const [sendMail, setMail] = useState('');
     const [sendMsg, setMsg] = useState('');
-    const [flaskReplyMsg, setFlaskRplMSG] = useState('wow');
+    const [flaskReplyMsg, setFlaskRplMSG] = useState('');
 
     const onSubmit = (event) => {
         event.preventDefault();
@@ -91,7 +91,6 @@ const handleMSGChange = (event) => {
                 <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
-            <h2>{flaskReplyMsg}</h2>
           </div>   
         </section>
     )

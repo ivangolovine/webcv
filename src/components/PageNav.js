@@ -23,7 +23,7 @@ function PageNav() {
           <Link to="/About"><li><span id="ntb-bar-links">About Us</span></li></Link>
           <Link to="/Examples"><li><span id="ntb-bar-links">Examples</span></li></Link>
           <Link to="/Hire"><li><span id="ntb-bar-links">Hire Us</span></li></Link>
-          <li><a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF"><img id="download-b" src="images/Download-Resume.png"/></a></li>
+          <li><div className="nav-test-download-glow"><a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF"><img id="download-b" src="images/Download-Resume.png"/></a></div></li>
       </ul>
     </nav>
     </div>

@@ -1,7 +1,7 @@
-import Home from './pages/Home';
+import About from './pages/About';
 import Examples from './pages/Examples';
 import HireUs from './pages/HireUs';
-import About from './pages/About'
+import Home from './pages/Home'
 
 import {
   BrowserRouter,
