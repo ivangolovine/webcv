@@ -27,7 +27,7 @@ return (
                 <div className="first-column">
                     <div className="profile-img-box">
                         <figure className="profile-img">
-                            <img src="images/ivan.png" alt="Profile Ivan"/>
+                            <img src="images/Ivan.png" alt="Profile Ivan"/>
                         </figure>
                     </div>
                     <ul className="profile-links">
