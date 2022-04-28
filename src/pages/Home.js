@@ -1,9 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer"
-import Nav from "../components/Nav";
-import NavUP from "../components/NavUp";
-import PageNav from "../components/PageNav";
-import ContactEmail from "../components/ContactEmail"
+import Nav from "../components/navigation/Nav";
+import NavUP from "../components/navigation/NavUp";
+import PageNav from "../components/navigation/PageNav";
+import ContactEmail from "../components/emailform/ContactEmail"
 import {useState, useEffect, useRef} from 'react'
 import Typewriter from "typewriter-effect";
 
@@ -13,8 +13,6 @@ function home(){
     const textPr = "#include &lt stdio.h &gt <br>   struct person { <br>    char name[50]; <br>    int age;</br>};\
     <br> int main(){<br>    struct person p;<br>    p.age=24;<br>    p.name=Ivan Golovine<br>    printf(\"%i\", \"%s\",s.age,s.name);\
     <br> return 0;<br>}"
-
-
 
     return(
         <div className="Main">

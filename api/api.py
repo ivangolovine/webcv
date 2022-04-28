@@ -10,9 +10,8 @@ import smtplib, ssl
 from dotenv import load_dotenv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import re
-
 from numpy import true_divide
+from emailhandle import*
 
 app = Flask('__name__')
 
@@ -22,30 +21,10 @@ nameMail = os.environ.get("emailName")
 password = os.environ.get("emailPass")
 msg = MIMEMultipart()
 msg['From'] = nameMail
-# Make a regular expression
-# for validating an Email
-regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-
-def Validate_Email(email):
-    if (re.fullmatch(regex,email)):
-        return True
-    else:
-        return False
-
-
-def ContactFormValidator(a,b,c):
-    if ((a.isalnum() != True) or (len(a) > 30)):
-        return "incorrect name"
-    if (Validate_Email(b) == False):
-        return "incorrect email"
-    if (len(c) > 2000):
-        return "message is too long"
-    return "correct input"
 
 @app.route('/api/time', methods=['GET'])
 def timeGET():
     j = "nice"
-
 
 
 @app.route('/api/sendMail', methods=['POST'])
@@ -54,9 +33,10 @@ def bobjk():
     a = requestData['mName']
     b = requestData['mMail']
     c = requestData['mMsg']
-    info_about_email = ContactFormValidator(a,b,c)
-    if (info_about_email != "correct input"):
-        return {"msg": info_about_email}
+    check_valid = ContactFormValidator(a,b,c)
+    if (check_valid == False):
+        info_about_email = ContactFormBuilder()
+        return info_about_email
     else:
         msg['To'] = b
         msg['Subject'] = 'Work Info'
