@@ -1,9 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer"
-import Nav from "../components/Nav";
-import NavUP from "../components/NavUp";
-import PageNav from "../components/PageNav";
-import ContactEmail from "../components/ContactEmail"
+import Nav from "../components/navigation/Nav";
+import NavUP from "../components/navigation/NavUp";
+import PageNav from "../components/navigation/PageNav";
+import ContactEmail from "../components/emailform/ContactEmail"
 
 function HireUs(){
   return(

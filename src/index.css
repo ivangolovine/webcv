@@ -179,10 +179,10 @@ footer .col:first-child li:hover{
 
 .Download-CV {
     display: flex;
-    position: relative;
-    align-items: center;
     justify-content: center;
-    background-color: #fff;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
     flex-direction: row;
     border-radius: 15px;
     box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);

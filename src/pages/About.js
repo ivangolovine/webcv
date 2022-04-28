@@ -1,9 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer"
-import Nav from "../components/Nav";
-import NavUP from "../components/NavUp";
-import PageNav from "../components/PageNav";
-import ContactEmail from "../components/ContactEmail"
+import Nav from "../components/navigation/Nav";
+import NavUP from "../components/navigation/NavUp";
+import PageNav from "../components/navigation/PageNav";
+import ContactEmail from "../components/emailform/ContactEmail"
 import CarouselV1 from "../components/Carousel-Impl"
 import SideBar from "../components/SideBar";
 
@@ -55,7 +55,6 @@ I'm most familiar with Java, C++, Python, and C, however, I'm prepared to learn 
                 </div>
                 <div className="my-technologies-container">
                     <h2>My Stack</h2>
-                        <p>General Overview</p>
                         <h1>Languages/Libraries/Frameworks</h1>
                             <ul className="my-technologies-outer">
                             {list_tech_show}
