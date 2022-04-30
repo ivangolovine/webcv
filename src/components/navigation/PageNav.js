@@ -16,14 +16,14 @@ function PageNav() {
   },[])
   return(
     <div className={navBarColour}>
-    <a className="Main-nav-img" href="https://www.cs.ryerson.ca/~cps530/" target="_blank"><img src="https://i.imgur.com/FZh2skv.png"/></a>
+    <div className="Main-nav-img"><Link to="/"><img src="images/MIGdevelopment.png"/></Link></div>
      <nav className="nav-test-bar">
       <ul>
           <Link to="/"><li><span id="ntb-bar-links">Home</span></li></Link>
           <Link to="/About"><li><span id="ntb-bar-links">About Us</span></li></Link>
           <Link to="/Examples"><li><span id="ntb-bar-links">Examples</span></li></Link>
           <Link to="/Hire"><li><span id="ntb-bar-links">Hire Us</span></li></Link>
-          <li><div className="nav-test-download-glow"><a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF"><img id="download-b" src="images/Download-Resume.png"/></a></div></li>
+          <li><a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF"><img id="download-b" className="nav-test-download-glow" src="images/Download-Resume.png"/></a></li>
       </ul>
     </nav>
     </div>
