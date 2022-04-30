@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 
 :root {
@@ -228,6 +228,19 @@ footer .col:first-child li:hover{
 
 .second-column {
     margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.second-column h2{
+    color: #555;
+    font-weight: 300;
+}
+.second-column h1 {
+    font-size: 45px;
+    font-weight: 600;
+    flex-grow: 4;
+    color: rgb(0, 0, 0);
+    padding-top: 1px;
+    padding-bottom: 10px
 }
 
 
@@ -245,6 +258,7 @@ footer .col:first-child li:hover{
     padding-bottom: 10px;
     font-size: 40px;
     color: #889ab1;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .email-container-box {
@@ -312,9 +326,10 @@ footer .col:first-child li:hover{
 }
 
 .Main-nav-img img {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     float: left;
+    object-fit: contain;
     padding: 8px 0;
 }
 
@@ -376,18 +391,9 @@ footer .col:first-child li:hover{
 
 
 .nav-test-download-glow{
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.474);
-    box-shadow:
-    inset 0 0 5px #fff,
-    inset 2px 0 8px rgb(77, 55, 128),
-    inset -2px 0 8px #0ff,
-    inset 2px 0 30px #f0f,
-    inset -2px 0 30px #0ff,
-    0 0 5px #fff,
-    -1px 0 8px #f0f,
-    1px 0 8px #0ff;
-
+    filter: opacity(0.4) 
+    drop-shadow(0 0 0 rgb(255, 0, 0))
+    brightness(12);
 }
 #download-b {
     height: 16px;
@@ -439,6 +445,17 @@ footer .col:first-child li:hover{
     margin-right: auto;
     margin-top: 10px;
 }
+
+
+.my-technologies-container h2 {
+    font-size: 45px;
+    font-weight: 600;
+    flex-grow: 4;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
 
 .my-technologies-outer {
     display: flex;
@@ -538,6 +555,7 @@ footer .col:first-child li:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
     margin: 25px;
 }
 

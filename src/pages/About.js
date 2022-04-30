@@ -5,16 +5,23 @@ import NavUP from "../components/navigation/NavUp";
 import PageNav from "../components/navigation/PageNav";
 import ContactEmail from "../components/emailform/ContactEmail"
 import CarouselV1 from "../components/Carousel-Impl"
-import SideBar from "../components/SideBar";
+import data from "../data/about.json"
 
 function About(){
-    const techstack = ["Java","C++","C","Oracle SQL","MySQL","CSS","CSS3","HTML","Perl","PHP",
-    "JavaScript","Bash","Git","Flask","ReactJS","Node.js","Google Test", "Codecov", "Travis Ci","OpenGL","Github","Nginx","SSH", "SSL"]
-    const osstack = ["Windows", "Mac OS", "Linux/Unix"]
+    const techstack = ["Java","C++","C","Python","Ruby","SQL","CSS3","HTML5","Perl","PHP",
+    "JavaScript","Bash","Prolog","Json", "XML", "Classic ASP", "Haskell", "Rust", "Elixir"]
+    const frameworksstack = ["Flask", "React.js","Semantic UI","Bootstrap","jQuary","Node.js","Django",".NET Core"]
+    const devopsstack = ["AWS","Nginx","Gunicorn","Git","Github", "Codecov", "Travis Ci", "SSH", "Zenhub","Docker","VMware"]
+    const database = ["Oracle SQL", "MySQL", "MSSQL"]
+    const osstack = ["Windows", "Mac OS", "Linux/Unix", "Ubuntu"]
+
     const list_os_show = osstack.map(osstack_tech =>  <li className="list-techno-inner"> {osstack_tech}</li>)
     const list_tech_show = techstack.map(tech => <li className="list-techno-inner"> {tech}</li>)
+    const list_framew_show = frameworksstack.map(frameworksstack => <li className="list-techno-inner"> {frameworksstack}</li>)
+    const list_devo_show = devopsstack.map(devopsstack => <li className="list-techno-inner"> {devopsstack}</li>)
+    const list_datab_show = database.map(database => <li className="list-techno-inner"> {database}</li>)
 
-
+    
 return (
     <div className="Main">
     <Nav/>
@@ -37,12 +44,10 @@ return (
                
                  </div> 
             <div className="second-column">
-                <h1> About Me </h1>
-                <h2> Ivan Golovine </h2>
-                <p> 24 Years Old </p>
+                <h2> About Me</h2>
+                <h1> Ivan Golovine </h1>
                 <article>
-                    <p>I already have experience working with a variety of different languages, databases, libraries, and tools.  I’ve had to perform both manual and automated tests while properly following procedures and writing down reports. During my studies, I learned proper software development procedures and how to plan out projects. Utilizing that knowledge when collaborating on major projects ranging from machine learning to computer graphics. I also have experience working through the full deployment life cycle and understand the importance of staying on top of things. I’m also able to obtain and maintain Government of Canada level secret clearance.
-I'm most familiar with Java, C++, Python, and C, however, I'm prepared to learn and adapt to the work environment. I've also used Oracle SQL, building a working Art-Gallery with the help of Java. I utilized bash, and Linux as part of my course when I was learning C and received a 4.33 GPA in the course. I’ve also studied Machine learning as part of my AI and reinforcement learning courses and made use of some of the concepts while working at fuzzex. During my time in software tools for startups, I made use of git, ZenHub, Ethereum, Django, Node.js, MongoDB, Angular, and Ionic. I'm also trilingual, being fluent in English, French, and Russian which allows me to communicate with a variety of clients and co-workers.</p>
+                <p>I’m a <b>software developer</b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University</i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br></br><br></br>In 2019, I had a brief part-time opportunity at <i>Fuzzex</i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br></br><br></br>Currently I’m interested in expanding on my experience with certain <i>front-end languages</i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation.</p>
                 </article>
             </div>
         </div>
@@ -54,12 +59,16 @@ I'm most familiar with Java, C++, Python, and C, however, I'm prepared to learn 
                     <CarouselV1 />    
                 </div>
                 <div className="my-technologies-container">
-                    <h2>My Stack</h2>
-                        <h1>Languages/Libraries/Frameworks</h1>
-                            <ul className="my-technologies-outer">
-                            {list_tech_show}
-                            </ul>
-                        <h1>OS</h1>
+                    <h2>Stack</h2>
+                        <h3>Languages</h3>
+                            <ul className="my-technologies-outer">{list_tech_show}</ul>
+                        <h3>Frameworks</h3>
+                            <ul className="my-technologies-outer">{list_framew_show}</ul>
+                        <h3>DevOps</h3>
+                            <ul className="my-technologies-outer">{list_devo_show}</ul>
+                        <h3>Database</h3>
+                            <ul className="my-technologies-outer">{list_datab_show}</ul>
+                        <h3>OS</h3>
                         <ul className="my-technologies-outer">
                             {list_os_show}
                         </ul>

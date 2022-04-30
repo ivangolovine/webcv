@@ -19,9 +19,7 @@ function Examples(){
 
             </div>
             <div>
-                <h2>
-
-                </h2>
+                <h2>Useful Resources</h2>
             </div>
         </div>
     </main>
