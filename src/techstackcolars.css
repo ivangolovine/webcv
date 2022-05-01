@@ -1,0 +1,160 @@
+/*colors for techstack*/
+#javaclr {
+    background-color: #007396;
+}
+
+#javascriptsclr {
+    background-color: #F7DF1E;
+    color:rgb(0, 0, 0);
+}
+
+#cppclr {
+    background-color: #A8B9CC;
+}
+
+#cclr {
+    background-color: #00599C;
+}
+
+#pythonclr {
+    background-color: #3776AB;
+}
+
+#Rubysclr {
+    background-color: #CC342D;
+}
+
+
+#CSS3clr {
+    background-color: #1572B6;
+}
+
+#HTML5clr {
+    background-color: #E34F26;
+}
+
+#Perlclr {
+    background-color: #39457E;
+}
+
+#PHPclr {
+    background-color: #777BB4;
+}
+
+#Bashclr {
+    background-color: #4EAA25;
+}
+
+#Jsonclr {
+    background-color: #4d4848;
+}
+#XMLclr {
+    background-color: #37ab8a;
+}
+
+#Caspclr {
+    background-color: #36526a;
+}
+#Haskellclr {
+    background-color: #5D4F85;
+}
+#Rustclr {
+    background-color: #b1aaaa;
+    color: #1e1b1b;
+}
+
+#Elixirclr {
+    background-color: #4B275F;
+}
+
+#flaskclr {
+    background-color: #8f7b7b;
+}
+
+#reactjsclr {
+    background-color: #61DAFB;
+}
+
+#suclr {
+    background-color: #35BDB2;
+}
+
+#Bootstrapclr {
+    background-color: #7952B3;
+}
+
+#jQuaryclr {
+    background-color: #0769AD;
+}
+
+#NodeJSclr {
+    background-color: #339933;
+}
+
+#Djangoclr {
+    background-color: #092E20;
+}
+
+#NETclr {
+    background-color: #512BD4;
+}
+
+#AWSclr {
+    background-color: #232F3E;
+}
+#Nginxclr {
+    background-color: #009639;
+}
+#Gunicornclr {
+    background-color: #499848;
+}
+#Gitclr {
+    background-color: #F05032;
+}
+#Githubclr {
+    background-color: #272424;
+}
+#Codecovclr {
+    background-color: #F01F7A;
+}
+#traviciclr {
+    background-color: #3EAAAF;
+}
+
+#SSHclr {
+    background-color: #545063;
+}
+
+#Zenhubclr {
+    background-color: #6344d2;
+}
+#Dockerclr {
+    background-color: #2496ED;
+}
+#VMwareclr {
+    background-color: #607078;
+}
+/*last part*/
+#oracleclr {
+    background-color: #F80000;
+}
+#mysqlclr {
+    background-color: #4479A1;
+}
+#msclr {
+    background-color: #CC2927;
+}
+
+#windowsclr {
+    background-color: #0078D6;
+}
+#macclr {
+    background-color: #3a3434;
+}
+#linuxclr {
+    background-color: #FCC624;
+}
+#ubuntuclr {
+    background-color: #E95420;
+}
+
