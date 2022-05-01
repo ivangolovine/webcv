@@ -8,20 +8,97 @@ import CarouselV1 from "../components/Carousel-Impl"
 import data from "../data/about.json"
 
 function About(){
-    const techstack = ["Java","C++","C","Python","Ruby","SQL","CSS3","HTML5","Perl","PHP",
-    "JavaScript","Bash","Prolog","Json", "XML", "Classic ASP", "Haskell", "Rust", "Elixir"]
-    const frameworksstack = ["Flask", "React.js","Semantic UI","Bootstrap","jQuary","Node.js","Django",".NET Core"]
-    const devopsstack = ["AWS","Nginx","Gunicorn","Git","Github", "Codecov", "Travis Ci", "SSH", "Zenhub","Docker","VMware"]
-    const database = ["Oracle SQL", "MySQL", "MSSQL"]
-    const osstack = ["Windows", "Mac OS", "Linux/Unix", "Ubuntu"]
 
-    const list_os_show = osstack.map(osstack_tech =>  <li className="list-techno-inner"> {osstack_tech}</li>)
-    const list_tech_show = techstack.map(tech => <li className="list-techno-inner"> {tech}</li>)
-    const list_framew_show = frameworksstack.map(frameworksstack => <li className="list-techno-inner"> {frameworksstack}</li>)
-    const list_devo_show = devopsstack.map(devopsstack => <li className="list-techno-inner"> {devopsstack}</li>)
-    const list_datab_show = database.map(database => <li className="list-techno-inner"> {database}</li>)
-
+    //map/dictionary for content,color and icons
+    const techstack = [
+        {id: 1, icon: 'stack-icons/java.svg', content: 'Java', colorsclr: "javaclr"},
+        {id: 2, icon: 'stack-icons/javascript.svg', content: 'JavaScript', colorsclr:"javascriptsclr"},
+        {id: 3, icon: 'stack-icons/cplusplus.svg', content: 'C++', colorsclr: "cppclr"},
+        {id: 4, icon: 'stack-icons/c.svg', content: 'C', colorsclr:"cclr"},
+        {id: 5, icon: 'stack-icons/python.svg', content: 'Python', colorsclr: "pythonclr"},
+        {id: 6, icon: 'stack-icons/ruby.svg', content: 'Ruby', colorsclr:"Rubysclr"},
+        {id: 7, icon: 'stack-icons/css3.svg', content: 'CSS3', colorsclr:"CSS3clr"},
+        {id: 8, icon: 'stack-icons/html5.svg', content: 'HTML5', colorsclr: "HTML5clr"},
+        {id: 9, icon: 'stack-icons/perl.svg', content: 'Perl', colorsclr:"Perlclr"},
+        {id: 10, icon: 'stack-icons/php.svg', content: 'PHP', colorsclr: "PHPclr"},
+        {id: 11, icon: 'stack-icons/gnubash.svg', content: 'Bash', colorsclr:"Bashclr"},
+        {id: 12, icon: 'stack-icons/json.svg', content: 'Json', colorsclr:"Jsonclr"},
+        {id: 13, icon: 'stack-icons/xml-file.svg', content: 'XML', colorsclr: "XMLclr"},
+        {id: 14, icon: 'stack-icons/Asp_logo.svg', content: 'Classic ASP', colorsclr:"Caspclr"},
+        {id: 15, icon: 'stack-icons/haskell.svg', content: 'Haskell', colorsclr: "Haskellclr"},
+        {id: 16, icon: 'stack-icons/rust.svg', content: 'Rust', colorsclr:"Rustclr"},
+        {id: 17, icon: 'stack-icons/elixir.svg', content: 'Elixir', colorsclr:"Elixirclr"}
+    ];
     
+    const frameworksstack = [
+        {id: 1, icon: 'stack-icons/flask.svg', content: 'Flask', colorsclr: "flaskclr"},
+        {id: 2, icon: 'stack-icons/react.svg', content: 'ReactJS', colorsclr: "reactjsclr"},
+        {id: 3, icon: 'stack-icons/semanticuireact.svg', content: 'Semantic UI', colorsclr: "suclr"},
+        {id: 4, icon: 'stack-icons/bootstrap.svg', content: 'Bootstrap', colorsclr:"Bootstrapclr"},
+        {id: 5, icon: 'stack-icons/jquery.svg', content: 'jQuary', colorsclr: "jQuaryclr"},
+        {id: 6, icon: 'stack-icons/nodedotjs.svg', content: 'NodeJS', colorsclr:"NodeJSclr"},
+        {id: 7, icon: 'stack-icons/django.svg', content: 'Django', colorsclr:"Djangoclr"},
+        {id: 8, icon: 'stack-icons/dotnet.svg', content: '.NET Core', colorsclr: "NETclr"}
+    ]
+
+    const devopsstack = [
+        {id: 1, icon: 'stack-icons/amazonaws.svg', content: 'AWS', colorsclr: "AWSclr"},
+        {id: 2, icon: 'stack-icons/nginx.svg', content: 'Nginx', colorsclr: "Nginxclr"},
+        {id: 3, icon: 'stack-icons/gunicorn.svg', content: 'Gunicorn', colorsclr: "Gunicornclr"},
+        {id: 4, icon: 'stack-icons/git.svg', content: 'Git', colorsclr:"Gitclr"},
+        {id: 5, icon: 'stack-icons/github.svg', content: 'Github', colorsclr: "Githubclr"},
+        {id: 6, icon: 'stack-icons/codecov.svg', content: 'Codecov', colorsclr:"Codecovclr"},
+        {id: 7, icon: 'stack-icons/travisci.svg', content: 'Travis Ci', colorsclr:"traviciclr"},
+        {id: 8, icon: 'stack-icons/ssh.svg', content: 'SSH', colorsclr: "SSHclr"},
+        {id: 9, icon: 'stack-icons/zenhub.svg', content: 'Zenhub', colorsclr:"Zenhubclr"},
+        {id: 10, icon: 'stack-icons/docker.svg', content: 'Docker', colorsclr: "Dockerclr"},
+        {id: 11, icon: 'stack-icons/vmware.svg', content: 'VMware', colorsclr:"VMwareclr"}
+    ]
+
+    const database = [
+        {id: 1, icon: 'stack-icons/oracle.svg', content: 'Oracle SQL', colorsclr: "oracleclr"},
+        {id: 2, icon: 'stack-icons/mysql.svg', content: 'MySQL', colorsclr: "mysqlclr"},
+        {id: 3, icon: 'stack-icons/microsoftsqlserver.svg', content: 'MSSQL', colorsclr: "msclr"}
+    ]
+
+    const osstack = [
+        {id: 1, icon: 'stack-icons/windows.svg', content: 'Windows', colorsclr: "windowsclr"},
+        {id: 2, icon: 'stack-icons/macos.svg', content: 'Mac OS', colorsclr: "macclr"},
+        {id: 3, icon: 'stack-icons/linux.svg', content: 'Linux/Unix', colorsclr: "linuxclr"},
+        {id: 4, icon: 'stack-icons/ubuntu.svg', content: 'Ubuntu', colorsclr: "ubuntuclr"}
+    ]
+
+ 
+//technologies mapping the map
+    const content = techstack.map((post) =>
+    <li key={post.id} className="list-techno-inner" id={post.colorsclr}> 
+    <img id = "techImgSize" src = {post.icon}></img><span id = "techImgTxt">{post.content}</span>
+    </li>
+  );
+
+    const fwscontent = frameworksstack.map((post) =>
+    <li key={post.id} className="list-techno-inner" id={post.colorsclr}> 
+    <img id = "techImgSize" src = {post.icon}></img><span id = "techImgTxt">{post.content}</span>
+    </li>
+  );
+
+    const dscontent = devopsstack.map((post) =>
+    <li key={post.id} className="list-techno-inner" id={post.colorsclr}> 
+    <img id = "techImgSize" src = {post.icon}></img><span id = "techImgTxt">{post.content}</span>
+    </li>
+  );
+    
+  const dbcontent = database.map((post) =>
+    <li key={post.id} className="list-techno-inner" id={post.colorsclr}> 
+    <img id = "techImgSize" src = {post.icon}></img><span id = "techImgTxt">{post.content}</span>
+    </li>
+  );
+
+  const oscontent = osstack.map((post) =>
+    <li key={post.id} className="list-techno-inner" id={post.colorsclr}> 
+    <img id = "techImgSize" src = {post.icon}></img><span id = "techImgTxt">{post.content}</span>
+    </li>
+  );
 return (
     <div className="Main">
     <Nav/>
@@ -61,17 +138,15 @@ return (
                 <div className="my-technologies-container">
                     <h2>Stack</h2>
                         <h3>Languages</h3>
-                            <ul className="my-technologies-outer">{list_tech_show}</ul>
+                            <ul className="my-technologies-outer">{content}</ul>
                         <h3>Frameworks</h3>
-                            <ul className="my-technologies-outer">{list_framew_show}</ul>
+                            <ul className="my-technologies-outer">{fwscontent}</ul>
                         <h3>DevOps</h3>
-                            <ul className="my-technologies-outer">{list_devo_show}</ul>
+                            <ul className="my-technologies-outer">{dscontent}</ul>
                         <h3>Database</h3>
-                            <ul className="my-technologies-outer">{list_datab_show}</ul>
+                            <ul className="my-technologies-outer">{dbcontent}</ul>
                         <h3>OS</h3>
-                        <ul className="my-technologies-outer">
-                            {list_os_show}
-                        </ul>
+                        <ul className="my-technologies-outer">{oscontent}</ul>
                     </div>
             </section>
         </div>
