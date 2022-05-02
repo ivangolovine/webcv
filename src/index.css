@@ -160,6 +160,7 @@ footer .col:first-child li:hover{
   
   #topBtn:hover {
     background-color: rgb(228, 225, 225); /* Add a dark-grey background on hover */
+    transform: scale(1.5);
   }
 
 
@@ -171,7 +172,7 @@ footer .col:first-child li:hover{
     align-items: center;
     flex-direction: column;
     background-color: rgba(52,73,94,1);
-    background-image:linear-gradient(0deg, rgba(52,73,94,1) 10%, rgba(255,255,255,1) 11%, rgba(255,255,255,1) 95%, var(--color-black-dark2) 96%);
+    background-image:linear-gradient(0deg, rgba(52,73,94,1) 10%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 96%, var(--color-black-dark2) 96%);
     /*background-image: linear-gradient(0deg, #fff 44.44%, #d4e7fe 44.44%, #d4e7fe 0%, #fff 0%, #fff 94.44%, rgb(60, 83, 107) 94.44%, rgb(52, 73, 94) 100%);
     background: linear-gradient(0deg, rgba(52,73,94,1) 70%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 95%, rgba(52,73,94,1) 96%);
     background-size: 10px 1220px;*/
@@ -390,9 +391,7 @@ footer .col:first-child li:hover{
 
 
 .nav-test-download-glow{
-    filter: opacity(0.4) 
-    drop-shadow(0 0 0 rgb(255, 0, 0))
-    brightness(12);
+    fill: #fff;
 }
 #download-b {
     height: 16px;
