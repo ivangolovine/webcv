@@ -16,7 +16,7 @@ def Validate_Email(email):
     
 def ContactFormValidator(a,b,c):
     global invalid_name, invalid_mail, invalid_text
-    invalid_name= ((a.isalpha() == False) or (len(a) > 30))
+    invalid_name= ((all(x.isalpha() or x.isspace() for x in a) == False) or (len(a) > 30))
     invalid_mail = (Validate_Email(b) == False)
     invalid_text = (len(c) > 2000)
 

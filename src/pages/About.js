@@ -118,7 +118,6 @@ return (
                         <a href="https://github.com/ivangolovine" target="_blank"><img id = "gitImg" src="images/githubimage.png"/></a>
                         <a href="https://www.linkedin.com/in/ivan-golovine-76215a9b/" target="_blank"><img id = "linkImg"  src="images/linkedIn.png"/></a>        
                     </ul>
-               
                  </div> 
             <div className="second-column">
                 <h2> About Me</h2>

@@ -16,10 +16,17 @@ function Examples(){
         <div>
             <div>
                 <h2>Past Projects</h2>
+                <div>
+                    <img></img>
+                    
 
+                </div>
             </div>
             <div>
                 <h2>Useful Resources</h2>
+                <div>
+                    
+                </div>
             </div>
         </div>
     </main>

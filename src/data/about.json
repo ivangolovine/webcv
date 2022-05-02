@@ -1,11 +1,30 @@
 {
-    "personinformation": [
+    "project-info": [
         {
-            "language": "en",
+            "name": "Submarine Simulation in Underwater Environment",
             "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
+        },
+        {
+            "name": "Art Gallery Data Management System",
+            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
+        },
+        {
+            "name": "Blackjack Reinforcement Learning",
+            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
+        },
+        {
+            "name": "React Flask Website",
+            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
+        },
+        {
+            "name": "Portfolio",
+            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
+        },
+        {
+            
         }
     ],
-    "medias": [        
+    "useful-links": [        
         {
             "icon": "linkedin",
             "title": "LinkedIn",
@@ -20,24 +39,6 @@
             "icon": "facebook",
             "title": "Facebook",
             "http": "https://www.facebook.com/guilherme.borgesbastos"
-        }
-    ],
-    "hobbies": [        
-        {
-            "icon": "biking",
-            "title": "Cycling"
-        },
-        {
-            "icon": "dumbbell",
-            "title": "Gym"
-        },
-        {
-            "icon": "suitcase-rolling",
-            "title": "Travel"
-        },
-        {
-            "icon": "book",
-            "title": "Read"
         }
     ]
 }
