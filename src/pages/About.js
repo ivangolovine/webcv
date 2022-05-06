@@ -5,7 +5,7 @@ import NavUP from "../components/navigation/NavUp";
 import PageNav from "../components/navigation/PageNav";
 import ContactEmail from "../components/emailform/ContactEmail"
 import CarouselV1 from "../components/Carousel-Impl"
-import data from "../data/about.json"
+
 
 function About(){
 
@@ -109,10 +109,8 @@ return (
         <section id="About-Container">
         <div className="Download-CV">
                 <div className="first-column">
-                    <div className="profile-img-box">
-                        <figure className="profile-img">
-                            <img src="images/Ivan.png" alt="Profile Ivan"/>
-                        </figure>
+                    <div>
+                            <img className="profile-img" src="images/Ivan.png" alt="Profile Ivan"/>
                     </div>
                     <ul className="profile-links">
                         <a href="https://github.com/ivangolovine" target="_blank"><img id = "gitImg" src="images/githubimage.png"/></a>
