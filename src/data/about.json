@@ -1,44 +1,143 @@
-{
-    "project-info": [
-        {
-            "name": "Submarine Simulation in Underwater Environment",
-            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
-        },
-        {
-            "name": "Art Gallery Data Management System",
-            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
-        },
-        {
-            "name": "Blackjack Reinforcement Learning",
-            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
-        },
-        {
-            "name": "React Flask Website",
-            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
-        },
-        {
-            "name": "Portfolio",
-            "description": "I’m a <b>software developer<b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University<i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br><br>In 2019, I had a brief part-time opportunity at <i>Fuzzex<i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br><br>Currently I’m interested in expanding on my experience with certain <i>front-end languages<i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation."
-        },
-        {
-            
-        }
-    ],
-    "useful-links": [        
-        {
-            "icon": "linkedin",
-            "title": "LinkedIn",
-            "http": "https://www.linkedin.com/in/guilhermeborgesbastos/"
-        },
-        {
-            "icon": "github",
-            "title": "GitHub",
-            "http": "https://github.com/guilhermeborgesbastos"
-        },
-        {
-            "icon": "facebook",
-            "title": "Facebook",
-            "http": "https://www.facebook.com/guilherme.borgesbastos"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "name": "Blackjack Reinforcement Learning",
+        "icon": "images/examplespg-icons/blackjackPIC.png",
+        "http": "https://github.com/ivangolovine/CPS-824-BlackJack",
+        "textdc": [
+            {
+                "description": "Designed a blackjack environment in Python and use the gym, numpy, matplotlib.pyplot and mpl_toolkits libraries."
+            },
+            {
+                "description": "Implemented the on policy method Monte Carlo"
+            },
+            {
+                "description": "Tested every visit and first visit method with training episodes ranging from 100 to 1 million"
+            },
+            {
+                "description": "Seeing how different values for epsilon and gamma affect the outcome"
+            },
+            {
+                "description": "The success rate was measured via win, loss, draw ratio, by how close the agent got to the basic blackjack strategy"
+            },
+            {
+                "description": "Wrote a professional findings report and created a visual representation of the outcomes with graphical output from the program to show the results"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Submarine Simulation",
+        "icon": "images/examplespg-icons/submarinePIC.png",
+        "http": "https://github.com/ivangolovine/Submarine_Comp_Graph",
+        "textdc": [
+            {
+                "description": "Built using OpenGl, GLFW library and C++"
+            },
+            {
+                "description": "Implemented submarine collision detection of terrain and objects"
+            },
+            {
+                "description": "Texture-mapped objects on the ocean floor and terrain with intractable Gaussian blobs"
+            },
+            {
+                "description": "Used vertex shader and fragment shader to render the scene"
+            },
+            {
+                "description": "Multi-part submarine built in a hierarchical fashion and AI submarine"
+            }
+        ]
+    },
+    {
+         "id": 3,
+        "name": "Art Gallery Data Management System",
+        "icon": "images/examplespg-icons/artgallicPIC.png",
+        "http": "https://github.com/ivangolovine/ArtGallery",
+        "textdc": [
+            {
+                "description": "Built using SQL Developer utilizing Oracle 11g, tested using APEX, and finalized using Java"
+            },
+            {
+                "description": "Implemented BCNF, Normalization, and 3NF in order to increase data integrity"
+            },
+            {
+                "description": "Added functionality such as searching artworks based on criteria, buying, and renting"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "React Flask Website",
+        "icon": "images/examplespg-icons/reactflaskPIC1.png",
+        "http": "https://github.com/ivangolovine/react-flask-app",
+        "textdc": [
+            {
+                "description": "Single Page Application using React and Flask"
+            },
+            {
+                "description": "Implemented Dynamic Routing to all the pages with React"
+            },
+            {
+                "description": "Created by using components, pages, dynamic content, CSS Modules, Bootstrap, JS and HTML"
+            },
+            {
+                "description": "Used Json for the REST API implementation"
+            },
+            {
+                "description": "Handled login request with Flask, login time, querying MySql and routing the response back"
+            },
+            {
+                "description": "Set up a DigitalOcean server, and deployed by serving react/caching with Nginx and Flask with gunicorn."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Poker",
+        "icon": "images/examplespg-icons/pokericPIC.png",
+        "http": "https://github.com/ivangolovine/Poker2",
+        "textdc": [
+            {
+                "description": "For this assignment, I had write a program that deals two two-card poker hands and a shared five card pool (the flop/turn/river) according to the rules of Texas Holdem poker. "
+            },
+            {
+                "description": "The program determined the winning hand and returned it."
+            },
+            {
+                "description": "I wrote this program in Elixir, Haskell and Smalltalk. "
+            },
+            {
+                "description": "When determining the strength of each player’s hand, it considered the two cards that player was dealt, as well as the five cards present in the shared pool."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Portfolio",
+        "icon": "images/examplespg-icons/portfolioicPIC.png",
+        "http": "https://migdevelopment.ca",
+        "textdc": [
+            {
+                "description": "The current website you are looking at was built using React and Flask"
+            },
+            {
+                "description": "Implemented Dynamic Routing to all the pages with React"
+            },
+            {
+                "description": "Created by using components, pages, dynamic content, CSS Modules, Bootstrap, JS and HTML"
+            },
+            {
+                "description": "Used Json for the REST API implementation"
+            },
+            {
+                "description": "Implemented an email client using python with SMTP, ssl and MIME."
+            },
+            {
+                "description": "Added SSL to the NGINX server config with Let's Encrypt certbot."
+            },
+            {
+                "description": "Set up a DigitalOcean server, and deployed by serving react/caching with Nginx and Flask with gunicorn."
+            }
+        ]
+    }
+]

@@ -24,10 +24,8 @@ function home(){
             <div className="home-page-back">
                 <div className="inner-container-home">
                     <div className="first-column">
-                        <div className="profile-img-box">
-                            <figure className="profile-img">
-                                <img src="images/Ivan.png" alt="Profile Ivan"/>
-                            </figure>
+                        <div>
+                            <img className="profile-img" src="images/Ivan.png" alt="Profile Ivan"/>
                         </div>
                     <ul className="home-profile-links">
                         <a href="https://github.com/ivangolovine" target="_blank"><img src="images/icon_github.png"/></a>
