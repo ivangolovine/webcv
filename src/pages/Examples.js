@@ -42,6 +42,14 @@ function Examples(){
                     </div>
                 </div>
             </div>
+            <div className="past-project-back">
+            <div className="past-project-inner">
+                <h2>Resources</h2>
+                    <div className="projects-carousel">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <ContactEmail/>
