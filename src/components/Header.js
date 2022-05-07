@@ -3,7 +3,7 @@
 import {useState, useEffect} from 'react';
 
 function Header(props){
- return (<header> {props.text} </header>
+ return (<header id='header-prop'> {props.text} </header>
  );
 }
 

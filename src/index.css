@@ -58,7 +58,7 @@
     font-family: 'Urbanist', sans-serif;
 }
 
-header{
+#header-prop{
     text-align: center;
     line-height: 200px;
     height: 200px;
@@ -198,6 +198,12 @@ footer .col:first-child li:hover{
     flex-grow: 2;
     align-items: center;
     text-align: center;
+}
+
+.first-column div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first-column .profile-img{
@@ -717,17 +723,12 @@ footer .col:first-child li:hover{
 }
 
 /*
-
-
-
-
 #email-box-group {
     top: -4em;
     position: relative;
     justify-content: center;
     background-color: rgba(52,73,94,1);
 }
-
 .email-box-subgroup {
     margin: 40px 40px;
     background-color: #2980B9;
@@ -752,11 +753,9 @@ footer .col:first-child li:hover{
     margin-bottom: 3%;
     box-sizing: border-box;
 }
-
 .mainArticle p {
     padding: 0 30px;
     display: inline-block;
     background-color: #606e77;
 }
-
 */
