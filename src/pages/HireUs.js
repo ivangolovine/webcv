@@ -17,7 +17,8 @@ function HireUs(){
     <main>
         <div className="hire-option-back">
         <div className="hire-option-inner-background">
-          <h2>Options</h2>
+          <h2 id="hire-options-mttl">Options</h2>
+          <hr id="hr-optionsline"></hr>
             <div className="hire-option-inner-box">
             <div className="hire-option-inner-options">
               <h2>1</h2>
