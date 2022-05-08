@@ -1,5 +1,5 @@
 import About from './pages/About';
-import Examples from './pages/Examples';
+import Portfolio from './pages/Portfolio';
 import HireUs from './pages/HireUs';
 import Home from './pages/Home'
 
@@ -15,7 +15,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Examples" element={<Examples/>} />
+        <Route path="/Portfolio" element={<Portfolio/>} />
         <Route path="/Hire" element={<HireUs />} />
         <Route path="/About" element={<About />}/>
       </Routes>

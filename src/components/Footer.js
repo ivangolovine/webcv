@@ -8,7 +8,7 @@ function Footer(){
         <ul>
           <Link to="/"><li>Home</li></Link>
           <Link to="/About"><li>About Us</li></Link>
-          <Link to="/Examples"><li>Examples</li></Link>
+          <Link to="/Portfolio"><li>Portfolio</li></Link>
           <Link to="/Hire"><li>Hire Us</li></Link>
           <a href="files-dwnl/CV_2022_vi.png" className="nav-test-download-glow" download="CV-test" title="Open Resume as PDF"><img src="images/cloud-arrow-down-solid.svg"/></a>
       </ul>

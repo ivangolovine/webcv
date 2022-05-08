@@ -28,7 +28,7 @@ function Nav() {
         <ul id="myDropmenu" className = "drop-down-cont">
           <Link to="/"><li>Home</li></Link>
           <Link to="/About"><li>About Us</li></Link>
-          <Link to="/Examples"><li>Examples</li></Link>
+          <Link to="/Portfolio"><li>Portfolio</li></Link>
           <Link to="/Hire"><li>Hire Us</li></Link>
           <a href="files-dwnl/CV_2022_vi.png" download="CV-test" title="Open Resume as PDF">
            <li><img id="download-b" src="images/Download-Resume.png"/></li></a>

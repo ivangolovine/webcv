@@ -148,24 +148,37 @@ footer .col:first-child li:hover{
 }
 
 
-
+/*button that scrolls up*/
 #topBtn {
+    display: block;
+    width: 100%;
+    margin: auto; /*optional centering of image*/
+    z-index: 99; /* Make sure it does not overlap */
+    width: 15px;
+    padding-top: 2px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+ 
+
+  #topBtn-background{
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     cursor: pointer; /* Add a mouse pointer on hover */
-    width: 20px;
+    width: 25px;
+    height: 25px;
     background-color: #555;
     border-radius: 50%;
   }
-  
-  #topBtn:hover {
+
+  #topBtn-background:hover {
     background-color: rgb(228, 225, 225); /* Add a dark-grey background on hover */
     transform: scale(1.5);
   }
-
-
 
 /*Controls main page background*/
 #About-Container{
@@ -626,9 +639,10 @@ footer .col:first-child li:hover{
 
 
 .past-project-inner {
-    background-color: var(--color-black-dark-light);
+    background-color: rgba(150, 21, 219, 0.16);
     border-radius: 15px;
-    box-shadow: 0 0 30px 0 rgba(150,21,219, 0.16);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 30px 10px rgba(150,21,219, 0.16);
     width: 85vw;
     z-index: 2;
     padding: 2em;
@@ -691,7 +705,6 @@ footer .col:first-child li:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
   width: 300px;
   height: 220px;
   object-fit: cover;
@@ -700,12 +713,11 @@ footer .col:first-child li:hover{
 }
 
 .example-proj-inner-footer{
-   height: 75px;
-   margin-top: auto;
    background-color: #926f6f;
    display: flex;
    justify-content: center;
    align-items: center;
+   padding: 5px;
 }
 
 .example-proj-inner-footer a {
@@ -721,6 +733,74 @@ footer .col:first-child li:hover{
 .example-proj-inner-footer a:hover {
     background-color: #889ab1;
 }
+
+/*---------------------*/
+/*Hire Us Page*/
+.hire-option-back{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-black-dark-light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.hire-option-inner-background {
+    background-color: rgba(21, 163, 219, 0.16);
+    border-radius: 15px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 30px 10px rgba(21, 163, 219, 0.16);
+    width: 85vw;
+    z-index: 2;
+    padding: 2em;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.hire-option-inner-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hire-option-inner-options{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3%;
+}
+
+.hire-option-inner-background h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.hire-option-inner-background h4 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.hire-option-inner-options ul{
+    list-style-position: outside;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 1em;
+    padding-bottom: 5px;
+    margin-bottom: auto;
+}
+
+.hire-option-inner-options p {
+    padding: 5px;
+}
+
 
 /*
 #email-box-group {

@@ -25,7 +25,7 @@ const content = datajson && datajson.map((post) =>{
     }
   );
   
-function Examples(){
+function Portfolio(){
   return(
     <div className="Main">
     <Nav/>
@@ -46,7 +46,7 @@ function Examples(){
             <div className="past-project-inner">
                 <h2>Resources</h2>
                     <div className="projects-carousel">
-                        
+                    
                     </div>
                 </div>
             </div>
@@ -58,4 +58,4 @@ function Examples(){
   );
   }
 
-  export default Examples;
+  export default Portfolio;
