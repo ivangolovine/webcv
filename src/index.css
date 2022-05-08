@@ -752,7 +752,7 @@ footer .col:first-child li:hover{
     box-shadow: 0 0 30px 10px rgba(21, 163, 219, 0.16);
     width: 85vw;
     z-index: 2;
-    padding: 2em;
+    padding: 10px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -801,6 +801,21 @@ footer .col:first-child li:hover{
     padding: 5px;
 }
 
+#hire-options-mttl {
+    font-size: 45px;
+    font-weight: 600;
+    flex-grow: 4;
+}
+
+#hr-optionsline {
+    width: 250px; 
+    margin-left: auto;
+    margin-right: auto;
+    height:10px;
+    background-color:rgb(28, 28, 28); 
+    border: none; 
+    margin-bottom: 10px;
+}
 
 /*
 #email-box-group {
