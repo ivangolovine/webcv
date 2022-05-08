@@ -23,8 +23,10 @@ function NavU(){
         <div>
             {
                 NavUp && ( 
-                <button id="topBtn" 
-                onClick={ scrollUp }><img src="images/arrow-up-solid.svg"/></button>       
+                <div id="topBtn-background">
+                    <button id="topBtn" 
+                    onClick={ scrollUp }><img src="images/arrow-up-solid.svg"/></button>       
+                </div>
                 )
             }
         </div>

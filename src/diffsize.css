@@ -128,11 +128,10 @@
 
   .exampleICONS{
       width: 100%;
-      height: 50%;
   }
 
   .example-proj-inner-footer a {
-      width: 300px;
+      width: 200px;
   }
 
   #header-prop{
@@ -151,7 +150,10 @@
     flex-grow: 4;
     text-align: center;
 }
-
+    .example-proj-inner h5{
+        text-align: center;
+        padding-left: 0px;
+    }
 }
 
 
