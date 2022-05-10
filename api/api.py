@@ -19,13 +19,13 @@ load_dotenv()
 port = 465
 nameMail = os.environ.get("emailName")
 password = os.environ.get("emailPass")
-msg = MIMEMultipart()
-msg['From'] = nameMail
-msg2 = MIMEMultipart()
-msg2['From'] = nameMail
 
 @app.route('/api/sendMail', methods=['POST'])
 def emailSender():
+    msg = MIMEMultipart()
+    msg['From'] = nameMail
+    msg2 = MIMEMultipart()
+    msg2['From'] = nameMail
     requestData = json.loads(request.data)
     a = requestData['mName']
     b = requestData['mMail']
@@ -53,7 +53,8 @@ def emailSender():
             server.login(nameMail, password)
             server.sendmail(nameMail, nameMail, msg.as_string())
             server.sendmail(nameMail, b, msg2.as_string())
-        return {"msg": "Successfully Sent Email"}
+        return {"msg": "Successfully Sent Email",
+        }
 
 if name == '__main__':
     app.run(debug=True)
