@@ -8,6 +8,7 @@ import ContactEmail from "../components/emailform/ContactEmail"
 //
 
 function HireUs(){
+  document.title = "Hire Page MIG"
   return(
     <div className="Main">
     <Nav/>

@@ -26,10 +26,11 @@ const content = datajson && datajson.map((post) =>{
   );
   
 function Portfolio(){
+    document.title = "Portfolio MIG"
   return(
     <div className="Main">
     <Nav/>
-    <Header text = "Examples"/>
+    <Header text = "Portfolio"/>
     <PageNav />
     <NavUP />
     <main>

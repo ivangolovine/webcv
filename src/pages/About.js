@@ -99,6 +99,8 @@ function About(){
     <img id = "techImgSize" src = {post.icon}></img><span id = "techImgTxt">{post.content}</span>
     </li>
   );
+
+  document.title = "About MIG"
 return (
     <div className="Main">
     <Nav/>
