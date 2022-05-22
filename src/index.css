@@ -185,7 +185,6 @@ footer .col:first-child li:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: rgba(52,73,94,1);
     background-image:linear-gradient(0deg, rgba(52,73,94,1) 10%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 96%, var(--color-black-dark2) 96%);
     /*background-image: linear-gradient(0deg, #fff 44.44%, #d4e7fe 44.44%, #d4e7fe 0%, #fff 0%, #fff 94.44%, rgb(60, 83, 107) 94.44%, rgb(52, 73, 94) 100%);
@@ -195,7 +194,6 @@ footer .col:first-child li:hover{
 
 .Download-CV {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
     background-color: #fff;
@@ -205,6 +203,7 @@ footer .col:first-child li:hover{
     width: 85vw;
     z-index: 2;
     padding: 2em;
+    max-width: 1400px;
 }
 
 .first-column {
@@ -579,6 +578,7 @@ footer .col:first-child li:hover{
     flex-direction: row;
     border-radius: 15px;
     box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
+    max-width: 1400px;
     width: 85vw;
     z-index: 2;
     padding: 2em;
