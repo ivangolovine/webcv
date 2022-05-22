@@ -109,24 +109,24 @@ return (
     <NavUP />
     <main>
         <section id="About-Container">
-        <div className="Download-CV">
+            <div className="Download-CV">
                 <div className="first-column">
                     <div>
-                            <img className="profile-img" src="images/Ivan.png" alt="Profile Ivan"/>
+                        <img className="profile-img" src="images/Ivan.png" alt="Profile Ivan"/>
                     </div>
                     <ul className="profile-links">
                         <a href="https://github.com/ivangolovine" target="_blank"><img id = "gitImg" src="images/githubimage.png"/></a>
                         <a href="https://www.linkedin.com/in/ivan-golovine-76215a9b/" target="_blank"><img id = "linkImg"  src="images/linkedIn.png"/></a>        
                     </ul>
-                 </div> 
-            <div className="second-column">
-                <h2> About Me</h2>
-                <h1> Ivan Golovine </h1>
-                <article>
-                <p>I’m a <b>software developer</b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University</i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br></br><br></br>In 2019, I had a brief part-time opportunity at <i>Fuzzex</i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br></br><br></br>Currently I’m interested in expanding on my experience with certain <i>front-end languages</i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation.</p>
-                </article>
+                </div> 
+                <div className="second-column">
+                    <h2> About Me</h2>
+                    <h1> Ivan Golovine </h1>
+                    <article>
+                    <p>I’m a <b>software developer</b> who’s looking to expand upon the foundation built while completing <i>B.Sc (Honours) Computer Science degree at Ryerson University</i>. Throughout my studies I’ve had the pleasure of working and becoming fluent in a multitude of languages, gained an understanding of data structures, algorithms, networks, security and operating systems. I’ve also finished courses which covered computational complexity, artificial intelligence, reinforcement learning, data mining, web systems development, computer graphics, software verification and validation, software engineering, and software project management.<br></br><br></br>In 2019, I had a brief part-time opportunity at <i>Fuzzex</i> where I learned the importance of devops and testing. This was the first opportunity I had to actually apply the skills I learned in computer graphics and how an actual development cycle worked when working with a team. It also highlighted the importance of methodologies, frameworks and libraries while working under a tight time constraint. It also showed me how to properly document and write neat and comprehensible code.<br></br><br></br>Currently I’m interested in expanding on my experience with certain <i>front-end languages</i>, however I don’t currently have a specific field of computer science under which I could categorize myself. I find every aspect interesting in its own way and I’m currently working on upgrading my understanding of Reinforcement Learning and theory of computation.</p>
+                    </article>
+                </div>
             </div>
-        </div>
         </section> 
         <div className="color-back-tech">
             <section>
