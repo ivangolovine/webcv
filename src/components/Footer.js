@@ -11,8 +11,9 @@ function Footer(){
           <Link to="/Portfolio"><li>Portfolio</li></Link>
           <Link to="/Hire"><li>Hire Us</li></Link>
           <Link to="/Resources"><li>Resource</li></Link>
-          <p>Testing</p>
-          <a href="files-dwnl/CV_2023_IG_V.png" className="nav-test-download-glow" download="CV-test" title="Open Resume as PDF"><img src="images/cloud-arrow-down-solid.svg"/></a>
+          <a href="files-dwnl/CV_2023_IG_V.png" className="nav-test-download-glow" download="CV-test" title="Open Resume as PDF">
+          <img src="images/cloud-arrow-down-solid.svg"/>
+          </a>
         </ul>
       </div>
       <div className="col">
