@@ -11,7 +11,7 @@ import { useEffect } from "react";
 
 function Home(){
     const textPr = "#include &lt stdio.h &gt <br>   struct person { <br>    char name[50]; <br>    int age;</br>};\
-    <br> int main(){<br>    struct person p;<br>    p.age=24;<br>    p.name=Ivan Golovine<br>    printf(\"%i\", \"%s\",s.age,s.name);\
+    <br> int main(){<br>    struct person p;<br>    p.age=24;<br>    p.name=Ivan Golovine<br>    printf(\"%i\", \"%s\",p.age,p.name);\
     <br> return 0;<br>}"
     document.title = "Home MIG"
     
