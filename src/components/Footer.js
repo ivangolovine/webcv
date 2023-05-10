@@ -12,7 +12,7 @@ function Footer(){
           <Link to="/Hire"><li>Hire Us</li></Link>
           <Link to="/Resources"><li>Resource</li></Link>
           <a href="files-dwnl/CV_2023_IG_V.png" className="nav-test-download-glow" download="CV-test" title="Open Resume as PDF"><img src="images/cloud-arrow-down-solid.svg"/></a>
-      </ul>
+        </ul>
       </div>
       <div className="col">
         <p>Contributers</p>
