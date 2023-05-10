@@ -1,7 +1,8 @@
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import HireUs from './pages/HireUs';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import ResourceLinks from './pages/ResourceLinks';
 
 import {
   BrowserRouter,
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio/>} />
         <Route path="/Hire" element={<HireUs />} />
         <Route path="/About" element={<About />}/>
+        <Route path="/Resource" element={<ResourceLinks />}/>
       </Routes>
     </div>
   );
