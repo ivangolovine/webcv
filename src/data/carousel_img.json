@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Blackjack Reinforcement Learning",
+      "icon": "images/examplespg-icons/blackjackPIC.png",
+      "description": "Designed a blackjack environment in Python and used the gym, numpy, matplotlib.pyplot and mpl_toolkits libraries.",
+      "http": "https://github.com/ivangolovine/CPS-824-BlackJack"
+    },
+    {
+      "id": 2,
+      "name": "Submarine Simulation",
+      "icon": "images/examplespg-icons/submarinePIC.png",
+      "description": "Built using OpenGl, GLFW library and C++",
+      "http": "https://github.com/ivangolovine/Submarine_Comp_Graph"
+    },
+    {
+      "id": 3,
+      "name": "Art Gallery Data Management System",
+      "icon": "images/examplespg-icons/artgallicPIC.png",
+      "description": "Built using SQL Developer utilizing Oracle 11g, tested using APEX, and finalized using Java",
+      "http": "https://github.com/ivangolovine/ArtGallery"
+    },
+    {
+      "id": 4,
+      "name": "React Flask Website",
+      "icon": "images/examplespg-icons/reactflaskPIC1.png",
+      "description": "Single Page Application using React and Flask",
+      "http": "https://github.com/ivangolovine/react-flask-app"
+    },
+    {
+      "id": 5,
+      "name": "Poker",
+      "icon": "images/examplespg-icons/pokericPIC.png",
+      "description": "Poker program I had to create using various languages like Elixir, Haskell and Smalltalk.",
+      "http": "https://github.com/ivangolovine/Poker2"
+    },
+    {
+      "id": 6,
+      "name": "Portfolio",
+      "icon": "images/examplespg-icons/portfolioPIC.png",
+      "description": "The current website you are looking at was built using React and Flask",
+      "http": "https://migdevelopment.ca"
+    }
+]
+

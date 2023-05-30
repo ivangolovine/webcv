@@ -6,7 +6,7 @@
         "http": "https://github.com/ivangolovine/CPS-824-BlackJack",
         "textdc": [
             {
-                "description": "Designed a blackjack environment in Python and use the gym, numpy, matplotlib.pyplot and mpl_toolkits libraries."
+                "description": "Designed a blackjack environment in Python and used the gym, numpy, matplotlib.pyplot and mpl_toolkits libraries."
             },
             {
                 "description": "Implemented the on policy method Monte Carlo"
@@ -49,7 +49,7 @@
         ]
     },
     {
-         "id": 3,
+        "id": 3,
         "name": "Art Gallery Data Management System",
         "icon": "images/examplespg-icons/artgallicPIC.png",
         "http": "https://github.com/ivangolovine/ArtGallery",
@@ -92,7 +92,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "Poker",
         "icon": "images/examplespg-icons/pokericPIC.png",
         "http": "https://github.com/ivangolovine/Poker2",
@@ -104,7 +104,7 @@
                 "description": "The program determined the winning hand and returned it."
             },
             {
-                "description": "I wrote this program in Elixir, Haskell and Smalltalk. "
+                "description": "I wrote this program in Elixir, Haskell and Smalltalk."
             },
             {
                 "description": "When determining the strength of each player’s hand, it considered the two cards that player was dealt, as well as the five cards present in the shared pool."
@@ -112,7 +112,7 @@
         ]
     },
     {
-        "id": 7,
+        "id": 6,
         "name": "Portfolio",
         "icon": "images/examplespg-icons/portfolioPIC.png",
         "http": "https://migdevelopment.ca",

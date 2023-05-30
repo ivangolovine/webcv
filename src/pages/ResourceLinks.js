@@ -22,12 +22,20 @@ const links_Lists = dataWebs && dataWebs.map((post) => {
 );
 
 
-function Resources(){
+function ResourceLinks(){
   return(
   <div>
+    <Nav/>
+    <Header text = "Resources"/>
+    <PageNav />
+    <NavUP />
     <main>
-        <h1>testing</h1>
-        {links_Lists}
+        <div className="under-construction-back">
+        <div className="under-construction">
+        <h1>Under Construction</h1>
+            <img src="images/garfield.webp"></img>
+        </div>
+        </div>
     </main>
     <ContactEmail/>
     <Footer />
@@ -35,4 +43,4 @@ function Resources(){
   );
   }
 
-export default Resources;
+export default ResourceLinks;

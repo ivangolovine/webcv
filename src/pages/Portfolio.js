@@ -1,13 +1,15 @@
 import Header from "../components/Header";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 import Nav from "../components/navigation/Nav";
 import NavUP from "../components/navigation/NavUp";
 import PageNav from "../components/navigation/PageNav";
 import ContactEmail from "../components/emailform/ContactEmail";
+import Portfolio_Slider from "../components/Portfolio-Carousel";
 import datajson from "../data/about.json";
+import carousel_images from "../data/carousel_img.json";
 
 //maps the json and accesses the array that stores the info
-const content = datajson && datajson.map((post) =>{
+const content = datajson && datajson.map((post) => {
     return (
     <div key={post.id} className="example-proj-inner"> 
         <img className="exampleICONS" src={post.icon} alt="bob"></img>
@@ -24,7 +26,10 @@ const content = datajson && datajson.map((post) =>{
     </div>)
     }
   );
-  
+
+
+
+
 function Portfolio(){
     document.title = "Portfolio MIG"
   return(
@@ -36,18 +41,13 @@ function Portfolio(){
     <main>
         <div>
             <div className="past-project-back">
+            <div className="portfolio-carousel-back">
+                <Portfolio_Slider slides = {carousel_images}/>
+            </div>
                 <div className="past-project-inner">
                 <h2>Past Projects</h2>
                     <div className="projects-carousel">
                         {content}
-                    </div>
-                </div>
-            </div>
-            <div className="past-project-back">
-            <div className="past-project-inner">
-                <h2>Resources</h2>
-                    <div className="projects-carousel">
-                    
                     </div>
                 </div>
             </div>
