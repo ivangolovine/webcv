@@ -1,12 +1,11 @@
 import React, {useState} from "react";
 
-
 function CarouselV1() {
     return (
        <div>
            <div className="carousel-container">
                 <div className="carousel-header">
-                    <div  className="company-name">
+                    <div className="company-name">
                         <span>Fuzzex</span>
                     </div>
                     <div className="company-role">
