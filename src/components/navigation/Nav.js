@@ -27,7 +27,7 @@ function Nav() {
       <nav>
         <ul id="myDropmenu" className = "drop-down-cont">
           <Link to="/"><li>Home</li></Link>
-          <Link to="/About"><li>About Us</li></Link>
+          <Link to="/About"><li>About</li></Link>
           <Link to="/Portfolio"><li>Portfolio</li></Link>
           <Link to="/Hire"><li>Hire Us</li></Link>
           <Link to="/ResourceLinks"><li>Resources</li></Link>

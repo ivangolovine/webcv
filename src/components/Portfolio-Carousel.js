@@ -3,7 +3,35 @@ import React, { useEffect, useState } from "react";
 const Portfolio_Slider = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [paused, setPaused] = useState(false);
+    const [touchPosition, setTouchPosition] = useState(null);
     const length = slides.length;
+
+    /*Handles swiping*/
+    const handleTouchStart = (e) => {
+        const touchDown = e.touches[0].clientX
+    setTouchPosition(touchDown)
+    }
+
+    const handleTouchMove = (e) => {
+        const touchDown = touchPosition
+    
+        if(touchDown === null) {
+            return
+        }
+    
+        const currentTouch = e.touches[0].clientX
+        const diff = touchDown - currentTouch
+    
+        if (diff > 5) {
+            nextSlide()
+        }
+    
+        if (diff < -5) {
+            prevSlide()
+        }
+    
+        setTouchPosition(null)
+    }
 
     const nextSlide = () => {
         setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
@@ -18,7 +46,7 @@ const Portfolio_Slider = ({ slides }) => {
             if (!paused) {
                 nextSlide(currentIndex + 1);
             }
-        }, 10000);
+        }, 10000000);
 
         return () => {
             if (interval) {
@@ -30,13 +58,13 @@ const Portfolio_Slider = ({ slides }) => {
     if (!Array.isArray(slides) || slides.length <= 0) {
         return null;
     }
-    //console.log(length);
-    console.log(currentIndex);
+
     return (
         <div className="carousel-container-portfolio"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
-        >
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}>
             <div className="carousel-container-slides">
             <div className="carousel-button-background carousel-left">
                 <button className="carousel-arrow carousel-left" onClick={prevSlide}><img src="images/angle-left-solid.svg"/></button>
