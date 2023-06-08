@@ -34,8 +34,8 @@ function Home(){
                     </ul>
                  </div> 
                     <div id = "nice-font">
-                        <h2>Hello I'm Ivan Golovine</h2>
-                        <p>I'm a software developer, web designer, and programmer</p>
+                        <h2>Hello, I'm Ivan Golovine</h2>
+                        <p>A software developer, web designer, and programmer</p>
                     </div>
                 </div>
                 <div className="type-writer-container">

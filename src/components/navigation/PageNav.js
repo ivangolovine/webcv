@@ -20,7 +20,7 @@ function PageNav() {
      <nav className="nav-test-bar">
       <ul>
           <Link to="/"><li><span id="ntb-bar-links">Home</span></li></Link>
-          <Link to="/About"><li><span id="ntb-bar-links">About Us</span></li></Link>
+          <Link to="/About"><li><span id="ntb-bar-links">About</span></li></Link>
           <Link to="/Portfolio"><li><span id="ntb-bar-links">Portfolio</span></li></Link>
           <Link to="/Hire"><li><span id="ntb-bar-links">Hire Us</span></li></Link>
           <Link to="/Resources"><li><span id="ntb-bar-links">Resource</span></li></Link>

@@ -1,0 +1,35 @@
+{
+    "Experiences" : [
+        {
+            "name": "Givex",
+            "role":"Software Developer",
+            "date":"Jun 2022 - May 2023",
+            "location": "Toronto, Ontario, Canada",
+            "description": [
+                {
+                    "details": "While working at Givex I got to experience developing robust applications using Python, PostgreSQL, Django, JavaScript and jQuery. I would develop new features for applications which are used by millions of customers around the globe. I partook in the design, development, and deployment of new features related to gift cards and loyalty cards."
+                },
+                {
+                    "details": "Some of the other things which I was responsible for were things like server management, Unit Test Monitoring, Error Monitoring, creating scripts for data management, code quality reviewing, and even translating into French when it was requested."
+                },
+                {
+                    "details": "Working at Givex helped me solidify the foundation I built while at University and finetune my understanding of the SDLC."
+                }
+            ]
+        },
+        {
+            "name": "Fuzzex",
+            "role":"C++ Developer",
+            "date":"Mar 2019 - Dec 2019",
+            "location": "Toronto, Ontario, Canada",
+            "description": [
+                {
+                    "details": "At Fuzzex, I was part of a small development team working on multiple mobile applications. Fuzzex was one of the first companies to bring Preferans and Tangram to the mobile market."
+                },
+                {
+                    "details": "I got to experience what it's like to work in a start-up environment, with an agile scrum approach to testing. It also taught me the importance of utilizing various tools and using  certain design patterns when it makes sense."
+                }
+            ]
+        }
+    ]
+}

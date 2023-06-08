@@ -14,6 +14,62 @@
         flex-wrap: wrap;
     }
 
+    /*About carousel*/
+    .about-carousel-button-background{
+        display: none;
+    }
+
+    .about-company-desc{
+        margin-top: 0.75em;
+        line-height: 1.5em;
+        font-size: 13px;
+        font-weight: normal;
+        text-align: left;
+    }
+    .about-company-name {
+        font-size: 25px;
+    }
+
+    .about-experience-title {
+        font-size: 45px;
+    }
+
+    .about-company-role {
+        font-size: 12px;
+    }
+    
+    .about-company-date {
+        font-size: 12px;
+    }
+    
+    .about-company-location {
+        font-size: 12px;
+    }
+
+    
+    /*carousel about page*/
+    .about-carousel-container-outside h1 {
+        font-size: 13px;
+    }
+
+    .about-carousel-container-outside {
+        padding: 10px;
+    }
+
+    /*Portfolio carousel*/
+    .carousel-button-background {
+        display: none;
+    }
+
+
+    .carousel-description .carousel-title {
+        font-size: 13px;
+    }
+
+    .carousel-description .carousel-details {
+        font-size: 10px;
+    }
+
     /*tech container needs more*/
     .my-technologies-container h1 {
         font-size: 13px;
@@ -22,6 +78,7 @@
     .my-technologies-container {
         padding: 10px;
     }
+
 
     .Download-CV {
         width: 80vw;
@@ -32,7 +89,6 @@
         justify-content: center;
         flex-direction: column;
         margin-top: 2em;
-        
     }
 
     
