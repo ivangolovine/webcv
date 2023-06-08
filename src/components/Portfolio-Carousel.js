@@ -46,7 +46,7 @@ const Portfolio_Slider = ({ slides }) => {
             if (!paused) {
                 nextSlide(currentIndex + 1);
             }
-        }, 10000000);
+        }, 10000);
 
         return () => {
             if (interval) {
