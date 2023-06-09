@@ -33,7 +33,7 @@ function ResourceLinks(){
         <div className="under-construction-back">
         <div className="under-construction">
         <h1>Under Construction</h1>
-            <img src="images/garfield.webp"></img>
+            <img src="images/garfield.gif"></img>
         </div>
         </div>
     </main>
