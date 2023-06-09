@@ -30,7 +30,7 @@ function Nav() {
           <Link to="/About"><li>About</li></Link>
           <Link to="/Portfolio"><li>Portfolio</li></Link>
           <Link to="/Hire"><li>Hire Us</li></Link>
-          <Link to="/ResourceLinks"><li>Resources</li></Link>
+          <Link to="/Resources"><li>Resources</li></Link>
           <a href="files-dwnl/CV_2023_IG_V.png" download="CV_IVAN" title="Open Resume as PDF">
            <li><img id="download-b" src="images/Download-Resume.png"/></li></a>
         </ul>
