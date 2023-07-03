@@ -39,11 +39,11 @@ function Portfolio(){
     <PageNav />
     <NavUP />
     <main>
-        <div>
+        <div className="home-background">
             <div className="past-project-back">
-            <div className="portfolio-carousel-back">
-                <Portfolio_Slider slides = {carousel_images}/>
-            </div>
+                <div className="portfolio-carousel-back">
+                    <Portfolio_Slider slides = {carousel_images}/>
+                </div>
                 <div className="past-project-inner">
                 <h2>Past Projects</h2>
                     <div className="projects-carousel">
