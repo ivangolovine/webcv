@@ -21,7 +21,7 @@ function Footer(){
         <ul>
           <li>Ivan</li> 
           <a href="https://github.com/ivangolovine" target="_blank"><img src="images/icon_github.png"/></a>
-          <a href="https://www.linkedin.com/in/ivan-golovine-76215a9b/" target="_blank"><img src="images/icon_linkedin.png"/></a>
+          <a href="https://www.linkedin.com/in/ivangolovine" target="_blank"><img src="images/icon_linkedin.png"/></a>
           <br/>
         </ul>
       </div>

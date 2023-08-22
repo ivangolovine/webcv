@@ -139,5 +139,25 @@
                 "description": "Set up a DigitalOcean server, and deployed by serving react/caching with Nginx and Flask with gunicorn."
             }
         ]
+    },
+    {
+        "id": 7,
+        "name": "PDF Parser",
+        "icon": "images/examplespg-icons/pdf-parser.jpeg",
+        "http": "https://github.com/ivangolovine/parser_pdf",
+        "textdc": [
+            {
+                "description": "Designed a custom PDF parser which extracts user specified data into XML/TXT formats"
+            },
+            {
+                "description": "Used python for the project, and Tkinter GUI framework"
+            },
+            {
+                "description": "Utilized the fitz module to extract pdf data into text format"
+            },
+            {
+                "description": "After the data was extracted sorted it based on user input and used pandas library to save into excel format"
+            }
+        ]
     }
 ]
