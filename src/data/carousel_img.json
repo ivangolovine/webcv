@@ -40,6 +40,13 @@
       "icon": "images/examplespg-icons/portfolioPIC.png",
       "description": "The current website you are looking at was built using React and Flask",
       "http": "https://migdevelopment.ca"
+    },
+    {
+      "id": 7,
+      "name": "PDF Parser",
+      "icon": "images/examplespg-icons/pdf-parser.jpeg",
+      "description": "Designed a custom PDF parser which extracts user specified data into XML/TXT formats",
+      "http": "https://github.com/ivangolovine/parser_pdf"
     }
 ]
 
