@@ -112,7 +112,7 @@ return (
             <div className="Download-CV">
                 <div className="first-column">
                     <div>
-                        <img className="profile-img" src="images/Ivan.png" alt="Profile Ivan"/>
+                        <img className="profile-img" src="images/profile.jpg" alt="Profile Ivan"/>
                     </div>
                     <ul className="profile-links">
                         <a href="https://github.com/ivangolovine" target="_blank"><img id = "gitImg" src="images/githubimage.png"/></a>

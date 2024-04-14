@@ -26,7 +26,7 @@ function Home(){
                 <div className="inner-container-home">
                     <div className="first-column">
                         <div>
-                            <img className="profile-img" src="images/Ivan.png" alt="Profile Ivan"/>
+                            <img className="profile-img" src="images/profile.jpg" alt="Profile Ivan"/>
                         </div>
                     <ul className="home-profile-links">
                         <a href="https://github.com/ivangolovine" target="_blank"><img src="images/icon_github.png"/></a>
