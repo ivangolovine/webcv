@@ -24,7 +24,7 @@ function PageNav() {
           <Link to="/Portfolio"><li><span id="ntb-bar-links">Portfolio</span></li></Link>
           <Link to="/Hire"><li><span id="ntb-bar-links">Hire Us</span></li></Link>
           <Link to="/Resources"><li><span id="ntb-bar-links">Resource</span></li></Link>
-          <li><a href="files-dwnl/Golovine_Ivan_Resume.pdf" download="Resume_Ivan_Golovine" title="Open Resume as PDF"><img id="download-b" className="nav-test-download-glow" src="images/cloud-arrow-down-solid.svg"/></a></li>
+          <li><a href="files-dwnl/Golovine_Ivan_Resume.pdf" download="Resume_Ivan_Golovine" title="Open Resume PDF"><img id="download-b" className="nav-test-download-glow" src="images/cloud-arrow-down-solid.svg"/></a></li>
       </ul>
     </nav>
     </div>
