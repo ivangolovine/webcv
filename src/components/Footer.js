@@ -11,7 +11,7 @@ function Footer(){
           <Link to="/Portfolio"><li>Portfolio</li></Link>
           <Link to="/Hire"><li>Hire Us</li></Link>
           <Link to="/Resources"><li>Resource</li></Link>
-          <a href="files-dwnl/Golovin_Ivan_Resume.png" className="nav-test-download-glow" download="CV-test" title="Open Resume as PDF">
+          <a href="files-dwnl/Golovine_Ivan_Resume.pdf" className="nav-test-download-glow" download="CV-test" title="Open Resume as PDF">
           <img src="images/cloud-arrow-down-solid.svg"/>
           </a>
         </ul>
